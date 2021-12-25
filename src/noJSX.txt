@@ -1,0 +1,26 @@
+
+// const App = () => {
+//   return React.createElement("div", {}, [
+//     React.createElement("h1", {}, "Adopt me"),
+//     React.createElement(Pet, {
+//       name: "Luna",
+//       animal: "Dog",
+//       breed: "Havanese",
+//     }),
+//     React.createElement(Pet, { name: "Coco", animal: "Dog", breed: "Bark" }),
+//     React.createElement(Pet, {
+//       name: "Zorro",
+//       animal: "Dog",
+//       breed: "schnauzer",
+//     }),
+//   ]);
+// };
+
+
+// const Pet = (props) => {
+//     return React.createElement("div", {}, [
+//       React.createElement("h2", {}, props.name),
+//       React.createElement("h3", {}, props.animal),
+//       React.createElement("h3", {}, props.breed),
+//     ]);
+// };
