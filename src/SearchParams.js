@@ -48,7 +48,7 @@ const SearchParams = () => {
             id="animal"
             value={animal}
             onBlur={(e) => setAnimal(e.target.value)}
-            onChange={(e) => setAnimal(e.target.value)}
+            onChange={(e) => {setAnimal(e.target.value);}}
           >
             <option></option>
             {ANIMALS.map((animal) => (
@@ -62,9 +62,9 @@ const SearchParams = () => {
           Breed
           <select
             id="breed"
-            value={animal}
-            onBlur={(e) => setAnimal(e.target.value)}
-            onChange={(e) => setAnimal(e.target.value)}
+            value={breed}
+            onBlur={(e) => setBreed(e.target.value)}
+            onChange={(e) => {setBreed(e.target.value);}}
           >
             <option></option>
             {breeds.map((breed) => (
@@ -96,6 +96,7 @@ const SearchParams = () => {
         <button style={{ backgroundColor: theme }}>Submit</button>
       </form>
       <Results pets={pets} />
+      
     </div>
   );
 };
